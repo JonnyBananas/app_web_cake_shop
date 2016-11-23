@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/register.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/cover.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--<h2>ingrese sus datos para registrarse</h2>
+    <form action="action_page.php">-->
+
+    <div class="site-wrapper">
+
+        <div class="site-wrapper-inner">
+
+            <div class="cover-container">
+
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">Registrarse</h3>
+                        <nav>
+                            <ul class="nav masthead-nav">
+                                <li class="active"><a href="index.html">Inicio</a></li>
+                                <li><a href="contacto.html">Contactos</a></li>
+                                <li><a href="pedido.html">Pedidos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="inner cover">
+                    <h1 class="cover-heading">registrarse para ser usuario.</h1>
+                    <p class="lead">Para registrarse como usuario no registrado, selecciona el botton de "Registrarse" para llenar sus datos de usuario no registrado.</p>
+                </div>
+
+                <button class="btn btn-lg btn-success" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Registrarse</button>
+
+                <div id="id01" class="modal">
+
+                    <form class="modal-content animate" action="action_page.php">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <!--  <img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+                        </div>
+
+                        <div class="container">
+                            <label><b>Usuario</b></label>
+                            <!--<input type="text" name="uname" required>-->
+                            <input type="text" placeholder="Escriba su nombre de usuario" name="uname" required>
+
+                            <label><b>Contraseña</b></label>
+                            <!--<input type="password" name="psw" required>-->
+                            <input type="password" placeholder="Escriba su Contraseña" name="psw" required>
+
+                            <label><b>Confirme Contraseña</b></label>
+                            <!--<input type="password" name="psw" required>-->
+                            <input type="password" placeholder="Confirme Contraseña" name="psw" required>
+
+                            <label><b>Em@il</b></label>
+                            <!--<input type="password" name="psw" required>-->
+                            <input type="email" placeholder="Escriba su email@ejemplo" name="email" required>
+
+                            <button class="btn btn-lg btn-block btn-success" type="submit">Registrar</button>
+                            <input type="checkbox" checked="checked"> Acepto los termino y condiciones
+                        </div>
+
+                        <!--<div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancelar</button><p>
+    <a class="cancelbtn" type="button" href="index.html">Inicio</a>-->
+
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"><a href="index.html">Cancelar</a></button>
+                            <span class="psw">Ya estas <a href="login.html">registrado?</a></span>
+
+                        </div>
+                    </form>
+                </div>
+
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p>Esta pagina esta optimizada con el metodo Developing Responsive con <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://facebook.com/jonathanavarro16">@Jonathanavarro16</a>.</p>
+                    </div>
+                </div>
+
+                <script src="js/jquery.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <scriptsrc="js/ie10-viewport-bug-workaround.js">
+                    </script>
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById('id01');
+
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+</body>
+
+</html>

@@ -1,27 +1,31 @@
 {
-  "name": "app_web_cake_shop",
-  "version": "1.0.0",
-  "description": "aplicacion web en nodejs",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "express": "^4.13.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JonnyBananas/app_web_cake_shop.git"
-  },
-  "keywords": [
-    "servidor",
-    "express"
-  ],
-  "author": "Jonathan Navarro",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JonnyBananas/app_web_cake_shop/issues"
-  },
-  "homepage": "https://github.com/JonnyBananas/app_web_cake_shop#readme"
+    "name": "app_web_cake_shop",
+    "version": "1.0.0",
+    "description": "aplicacion web en nodejs",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "atpl": "0.9.3",
+        "body-parser": "1.15.1",
+        "express": "^4.13.4",
+        "bootstrap": "4.0.0-alpha.5",
+        "node": "0.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JonnyBananas/app_web_cake_shop.git"
+    },
+    "keywords": [
+        "servidor",
+        "express"
+    ],
+    "author": "Jonathan Navarro",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/JonnyBananas/app_web_cake_shop/issues"
+    },
+    "homepage": "https://github.com/JonnyBananas/app_web_cake_shop#readme"
 }
