@@ -19,8 +19,11 @@
         "url": "git+https://github.com/JonnyBananas/app_web_cake_shop.git"
     },
     "keywords": [
+        "react",
         "servidor",
-        "express"
+        "express",
+        "example",
+        "comment"
     ],
     "author": "Jonathan Navarro",
     "license": "ISC",

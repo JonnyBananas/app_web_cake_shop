@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>React Tutorial</title>
+
+    <!--<link rel="stylesheet" href="css/base.css" />-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/react@15.3.0/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.3.0/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="https://unpkg.com/jquery@3.1.0/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/remarkable@1.6.2/dist/remarkable.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-text navbar-left">
+            <div class="col-md-12">
+                <div class="container">
+                    <h3 class="navbar-text">Pedido</h3>
+                    <nav class="navbar-right">
+                        <ul class="nav nav-pills">
+                            <li roll="presentation" class="active"><a href="index.html">Inicio</a></li>
+                            <li roll="presentation"><a href="contacto.html">Contactos</a></li>
+                            <li roll="presentation"><a href="pedido.html">Pedidos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <session class="main">
+        <article class="col-sm-offset-2">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="imagenes/pastel_carousel3.jpg" alt="0">
+                        <div class="caption">
+                            <h3>Pastel de fresa</h3>
+                            <p class="text text-justified">pan de vainilla, jarabe de 3 leches, relleno, top cream fresas con crema , fresas en cubos, cubierta, top cream de fresa, ganache blanco.</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Cake <span class="badge">1</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="imagenes/pastel_carousel3.jpg" alt="0">
+                        <div class="caption">
+                            <h3>Pastel de Chocolate</h3>
+                            <p class="text text-justified">Prueba este esponjosito pastel relleno y cubierto con delicioso y cremoso betún que hará que ames aún más este delicioso ingrediente.</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Cake<span class="badge">2</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img src="imagenes/pastel_carousel3.jpg" alt="0">
+                        <div class="caption">
+                            <h3>Pastel de chocoflan</h3>
+                            <p class="text text-justified">El chocoflan es un pastel de chocolate que encima tiene un flan, sabe delicioso y es buenísimo para sorprender a los demás con tus habilidades culinarias.</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Cake<span class="badge">3</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </session>
+    <div class="col-md-8 col-md-offset-2">
+        <div class="panel panel-default">
+            <div class "panel-body">
+                <div class="container">
+                    <div class="form-group">
+                        <div id="content">
+                            <div className="commentBox">
+                                <div class "active">
+                                    <h1>Comments</h1>
+                                </div>
+                                <div>
+                                    <CommentList data={this.state.data}/>
+                                </div>
+                                <div>
+                                    <CommentForm onCommentSubmit={this.handleCommentSubmit}/>
+                                    </commentForm>
+                                </div>
+                                <div>
+                                    <Comment author={comment.author} key={comment.id}></Comment>
+                                </div>
+                                <div className="commentList"> </div>
+                            </div>
+                            <div className="commentForm"></div>
+                        </div>
+
+                        <div className="comment">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/babel" src="js/example.js"></script>
+    <script type="text/babel">
+
+        <div class="active">
+            <h2 className="commentAuthor">{this.props.author}</h2>
+            <span dangerouslySetInnerHTML={this.rawMarkup()} />
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div>
+            <CommentBox data={data} url="/api/comments" pollInterval={2000} />
+        </div>
+
+        <session>
+
+            <div class="col-xs-6 col-md-3 col-md-offset-3">
+                <div class="container">
+                    <div class="form-group">
+                        <form className="commentForm" onSubmit={this.handleSubmit}>
+                            <div class="form-group">
+                                <labe>Nombre</label>
+                                    <input type="text" class="form-control" placeholder="Nombre o apodo" value={this.state.author} onChange={this.handleAuthorChange}/>
+                            </div>
+                            <div class="form-group">
+                                <label>comentario</label>
+                                <input type="text" class="form-control" placeholder="Escribe tu comentario.." value={this.state.text} onChange={this.handleTextChange}/>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="submit" value="Enviar" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </session>
+        <footer>
+            <div class="col-xs-6">
+                <div class="content">
+                    <div class="mastfoot">
+
+                        <div class="notes text-center">
+                            <p>Responsive Design with <a href="http://getbootstrap.com">Bootstrap</a>
+                                <p>by <a href="https://facebook.com/jonathanavarro16">@Jonathanavarro16</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </script>
+</body>
+
+</html>
